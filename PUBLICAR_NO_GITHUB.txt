@@ -1,0 +1,5 @@
+1) Apague os arquivos antigos da raiz do repositório Julihcia.
+2) Extraia este ZIP.
+3) Envie para a raiz do GitHub os arquivos: index.html, app-v8.js, styles-v8.css, config.js, manifest.json, VERSAO_8.txt, README.md e a pasta assets.
+4) Não envie uma pasta por cima; envie o conteúdo do ZIP na raiz.
+5) Depois de publicar, abra o site e faça um refresh forçado.
