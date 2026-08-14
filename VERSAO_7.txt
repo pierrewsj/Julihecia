@@ -1,0 +1,3 @@
+JULIH & CIA - VERSAO 7.0
+Arte limpa sem barra de status incorporada.
+Arquivos devem ser publicados diretamente na raiz desta pasta.
