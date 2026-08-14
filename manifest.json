@@ -1,0 +1,25 @@
+{
+  "name": "Julih & Cia — Pedidos",
+  "short_name": "Julih Pedidos",
+  "id": "julih-cia-cliente-v9",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#fff3f7",
+  "theme_color": "#f14577",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

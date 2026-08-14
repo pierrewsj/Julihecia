@@ -1,0 +1,17 @@
+JULIH & CIA — CLIENTE V9 CLEAN REBUILD
+
+Arquivos reescritos em estrutura limpa, inspirada na arquitetura do BO Digital GSP enviado como referência.
+
+Publicação:
+- extraia o ZIP;
+- envie o CONTEÚDO para a raiz do repositório/pasta onde o Cliente será publicado.
+
+PWA / instalação:
+- manifest.json + service-worker.js + pwa.js;
+- quando o Chrome liberar a instalação, aparece o botão Instalar;
+- atualização do aplicativo usa network-first nos arquivos críticos para evitar carregar versões antigas.
+
+Imagem:
+- a arte principal está dentro de art.js;
+- não depende de PNG/JPG externo para a tela inicial ou marca d’água;
+- assets contém somente os ícones obrigatórios do PWA.
