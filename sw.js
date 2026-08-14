@@ -1,5 +1,0 @@
-const CACHE = 'julih-cliente-v6-0';
-const ASSETS = ["./", "./index.html", "./index.html?v=6.0", "./styles-v6.css", "./styles-v6.css?v=6.0", "./app-v6.js", "./app-v6.js?v=6.0", "./config.js", "./config.js?v=6.0", "./manifest.json", "./manifest.json?v=6.0", "./assets/icon-192.png", "./assets/icon-512.png", "./assets/intro-art-v6.png"];
-self.addEventListener('install', event => { self.skipWaiting(); event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS))); });
-self.addEventListener('activate', event => { event.waitUntil(Promise.all([caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))), self.clients.claim()])); });
-self.addEventListener('fetch', event => { if(event.request.method !== 'GET') return; event.respondWith(fetch(event.request).then(response => { const copy = response.clone(); caches.open(CACHE).then(cache => cache.put(event.request, copy)).catch(()=>{}); return response; }).catch(() => caches.match(event.request).then(cached => cached || caches.match('./index.html?v=6.0') || caches.match('./index.html')))); });
